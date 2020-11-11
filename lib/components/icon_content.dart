@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import '../constants.dart';
 
-class IconConent extends StatelessWidget {
+class IconContent extends StatelessWidget {
   final IconData contentIcon;
   final String contentText;
 
-  IconConent({@required this.contentIcon, this.contentText});
+  IconContent({@required this.contentIcon, this.contentText});
 
   @override
   Widget build(BuildContext context) {
@@ -20,10 +21,7 @@ class IconConent extends StatelessWidget {
         ),
         Text(
           contentText,
-          style: TextStyle(
-            color: Color(0xFF8D8E98),
-            fontSize: 18.0,
-          ),
+          style: kLabelTextStyle,
         )
       ],
     );
